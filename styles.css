@@ -1,0 +1,130 @@
+@font-face {
+     font-family: effra-rg;
+     src: url('effra/Effra_Std_Rg.ttf');
+ }
+ @font-face {
+     font-family: effra-lt;
+     src: url('effra/Effra_Std_Lt.ttf');
+     /* font-weight: bold; */
+ }
+ body{
+     font-family: effra-rg;
+     margin: 0px 0px 0px 40px;
+     justify-content: center;
+    
+ }
+ *{
+     box-sizing: border-box;
+ }
+ 
+ .row:after{
+     content: "";
+     display: table;
+     clear: both;
+ }
+ 
+ .column{
+     float: left;
+     width: 50%;
+ }
+ 
+ .column-2{
+     width: 50%;
+     flex-direction: column;
+     justify-content: space-between;
+     display: inline-block;
+ }
+ .col-8{
+     width: 80%;
+ 
+ }
+ .col-4{
+     width: 20%;
+     float: left;
+     margin-right: 20px;
+ }
+ .container{
+     width: 100%;
+     margin-bottom: 10px;
+    
+ }
+ 
+ 
+ .link{
+     text-decoration: none;
+ }
+ 
+ .img{
+     height: 200px;
+     width: 200px;
+     border-radius: 0%;
+     border: none;
+ }
+ .img-col{
+     width: 33%;
+     float: left;
+     margin-bottom: 15px;
+ }
+ .img-1{
+     height: 350px;
+     width: 400px;
+     box-sizing: border-box;
+     border: 5px solid brown;
+     border-radius: 10px;
+ }
+ .text{
+     text-align: justify
+ }
+ .muted{
+     opacity: 0.9;
+     text-emphasis: none;
+     text-decoration:none;
+     color: brown;
+ }
+ 
+ .badge{
+     color: rgb(2, 2, 2);
+     background-color: brown;
+     border-radius: 15px;
+     padding: 10px;
+     margin: 5px;
+     text-transform: uppercase;
+ }
+ hr{
+
+      border:1px solid brown; 
+ }
+ @media screen and (max-width: 768px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: none;
+    }
+    .text{
+      float: right;
+    }
+
+    .badge{
+        color: rgb(2, 2, 2);
+        background-color: brown;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 5px;
+        text-transform: lowercase;
+        display: flex;
+    }
+    .column-2{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        display: inline-block;
+        margin: right 10px;
+    }
+
+ }
